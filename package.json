@@ -1,0 +1,15 @@
+{
+  "name": "js-adventure",
+  "version": "0.0.1",
+  "description": "This is a small game, written in JS, using NodeJS on the backend (which handles just a small number of things, such as saving progress), and native ES6 on the frontend. No React or anything on the frontend (using this as a little bit of practice in ES6).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cow-co",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.4"
+  }
+}

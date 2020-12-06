@@ -4,12 +4,22 @@
   "description": "This is a small game, written in JS, using NodeJS on the backend (which handles just a small number of things, such as saving progress), and native ES6 on the frontend. No React or anything on the frontend (using this as a little bit of practice in ES6).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine JASMINE_CONFIG_PATH=jasmine.json",
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "cow-co",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "http-shutdown": "^1.2.2",
     "mongoose": "^5.11.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "jasmine": "^3.6.3",
+    "mocha": "^8.2.1",
+    "mongodb-memory-server": "^6.9.2",
+    "supertest": "^6.0.1"
   }
 }

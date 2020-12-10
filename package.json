@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jasmine JASMINE_CONFIG_PATH=jasmine.json",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "author": "cow-co",
   "license": "ISC",
